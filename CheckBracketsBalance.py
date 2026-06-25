@@ -23,6 +23,14 @@ def check_brackets(s):
 
 
 # Example usage
-expr = """list.countvalid(Samples.GetRange(Lsm.[CLI001CL01_R_113 Ferry Rd_MICRO].[CLI001CL01_R_113 Ferry Rd_MICRO].[E.coli_E_MF_Water_100ML_SMEWW 9222K [ELS]]], (0 - 6), 0))"""
+# expr = """list.countvalid(Samples.GetRange(Lsm.[CLI001CL01_R_113 Ferry Rd_MICRO].[CLI001CL01_R_113 Ferry Rd_MICRO].[E.coli_E_MF_Water_100ML_SMEWW 9222K [ELS]]], (0 - 6), 0))"""
+
+try:
+    with open("input.txt", "r", encoding="utf-8") as file:
+        expr = file.read()
+except FileNotFoundError:
+    print("ERROR: input.txt not found. Please create the file with the expression to check.")
+    exit(1)
+
 print(check_brackets(expr))
 
