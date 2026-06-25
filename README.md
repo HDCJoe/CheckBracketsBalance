@@ -2,7 +2,7 @@
 **Date:**   28 Apr 2026\
 **App:**    CheckBracketsBalance
 
-Checks that that the number of opening brackets, parenthesis and braces match the number of closing.
+Checks that the number of opening brackets, parenthesis and braces match the number of closing.
 
 #How to Use
 - Create a file named input.txt in the same directory as the CheckBracketsBalance.py application
